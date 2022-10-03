@@ -1,0 +1,289 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-family: sans-serif;
+}
+body button{
+	border: none;
+	background-color: transparent;
+}
+body button a{
+	display: block;
+	text-decoration: none;
+	font-size: 10px;
+	color: rgb(109,192,146);
+	padding: 10px 40px;
+	border: 2px solid rgb(109,192,146);
+	border-radius: 20px;
+	background-color: transparent;
+	transition: 1s;
+}
+body button a:hover{
+	background-color: rgba(109,192,146,0.2);
+	transition: 1s;
+}
+/*HEADER*/
+.cabecera {
+	text-align: center;
+	color: white;
+}
+.cabecera-principal {
+	background-image: linear-gradient(rgba(100,100,120,0.9),rgba(0,0,0,0.9)), url(img/banner.jpg);
+	background-size: cover;
+	background-position: center;
+	padding: 30px 25px;
+}
+.header1{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 0.5px solid white;
+	padding-bottom: 20px;
+	margin: auto;
+}
+.header1 h2{
+	font-size: 12px;
+}
+header > label{
+	font-size: 30px;
+}
+/*HEADER MENÚ*/
+#chkmenu{
+	display: none;
+}
+#chkmenu:checked + .menu{
+	right: 0px;
+	transition: 1s;
+}
+#X {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+}
+.menu{
+	background-color: rgb(109,192,146);
+	position: fixed;
+	top: 0px;
+	right: -300px;
+	bottom: 0px;
+	transition: 1s;
+	z-index: 100;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.menu ul{
+	position: relative;
+}
+.menu li{
+	list-style: none; 
+	border-bottom: 0.5px solid white;
+}
+.menu li:last-of-type{
+	border-bottom: none;
+}
+.menu li a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	font-size: 13px;
+	padding: 20px 150px 20px 0px;
+}
+/*HEADER SECCIÓN WELCOME*/
+.welcome{
+	padding: 40px 80px;
+}
+.welcome h1{
+	font-size: 18px;
+	font-weight: lighter;
+	margin-bottom: 30px;
+}
+.welcome i{
+	font-size: 30px;
+	color: rgb(109,192,146);
+	margin-bottom: 10px;
+}
+.welcome h2{
+	font-size: 15px;
+	font-weight: lighter;
+	margin-bottom: 5px;
+}
+.welcome p{
+	font-size: 13px;
+	color: grey;	
+}
+.icon{
+	margin-bottom: 20px;
+}
+.welcome button{
+	margin-top: 30px;
+}
+/*MAIN SECCIÓN CONTENIDO*/
+.contenido{
+	text-align: center;
+	color: grey;
+	padding: 50px 50px;
+	margin: auto;
+}
+.contenido img{
+	width: 150px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+.contenido h3{
+	font-size: 23px;
+	font-weight: lighter;
+	width: 200px;
+	margin: auto;
+	margin-bottom: 25px;
+	line-height: 30px;
+	color: rgb(99,99,99);
+}
+.contenido p{
+	font-size: 14px;
+	width: 350px;
+	margin: auto;
+	margin-bottom: 20px;
+	line-height: 17px;
+}
+.contenido .con{
+	margin-bottom: 30px;
+}
+/*FOOTER*/
+footer{
+	background-color: rgb(109,192,146);
+	color: white;
+	padding: 30px;
+	text-align: center;
+}
+footer a{
+	color:rgba(255, 255, 255, 0.616);
+	text-decoration: none;;
+}
+footer h3{
+	font-weight: lighter;
+	margin-bottom: 30px;
+	font-size: 25px;
+}
+.form label{
+	font-size: 12px;
+	width: 100%;
+	text-align: left;
+	margin-bottom: 10px; 
+}
+.form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 25px;
+}
+.formulario input, textarea{
+	border: 0.5px solid white;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: transparent;
+	color: white;
+	font-size: 15px;
+	width: 100%;
+	outline: 0px;
+}
+textarea{
+	height: 100px;
+}
+.formulario input:focus{
+ border-color: green;
+}
+.formulario textarea:focus{
+ border-color: green;
+}
+::placeholder{
+	color: white;
+	font-size: 14px;
+}
+input[type="submit"]{
+	background-color: transparent;
+	color: white;
+	font-size: 10px;
+	padding: 10px 40px;
+	border: 2px solid white;
+	border-radius: 20px;
+	background-color: transparent;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	outline: 0px;
+	cursor: pointer;
+}
+.legal{
+	font-size: 11px;
+}
+/*GENERIC.HTML*/
+
+/*GENERIC HEADER*/
+.cabecera-generic{
+	background-color: rgb(109,192,146);
+}
+.header1-generic{
+	border-bottom: none; 
+	padding: 10px 20px;
+}
+/*GENERIC MAIN*/
+.generic{
+	text-align: center;
+	padding: 40px 30px;
+	color: grey;
+}
+.generic h1{
+	font-size: 20px;
+	font-weight: lighter;
+	margin-bottom: 10px;
+}
+.generic h4{
+	font-size: 10px;
+	font-weight: lighter;
+	margin-bottom: 30px;
+}
+.generic img{
+	width: 120px;
+	border-radius: 50%;
+}
+.generic p{
+	font-size: 12px;
+	line-height: 18px;
+	margin-bottom: 30px;
+	text-align: justify;
+}
+.generic img[src="img/pic01.jpg"]{
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.generic img[src="img/pic02.jpg"]{
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

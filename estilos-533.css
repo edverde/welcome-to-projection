@@ -1,0 +1,39 @@
+@media(min-width: 533px){
+/*HEADER*/
+/*HEADER SECCIÓN WELCOME*/
+.iconos{
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+.icon{
+	border-right: 0.5px solid grey;
+	padding: 0px 60px;
+}
+.icon:last-of-type{
+	border-right: none;
+}
+/*MAIN SECCIÓN CONTENIDO*/
+.contenido{
+	display: flex;
+	justify-content: space-around;
+}
+/*FOOTER*/
+footer{
+	padding: 70px 50px;
+}
+.formulario {
+	max-width: 1000px;
+	margin: auto;
+}
+.form1{
+	display: flex;
+	justify-content: space-between;
+}
+.form1 > .form{
+	width: 46%;
+}
+.legal{
+	font-size: 14px;
+}
+}

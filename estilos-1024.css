@@ -1,0 +1,48 @@
+@media(min-width: 1024px){
+/*HEADER*/
+header{
+	background-attachment: fixed;
+	padding: 40px 150px 200px 150px;
+}
+/*HEADER SECCIÓN WELCOME*/
+.welcome{
+	margin-top: 120px;
+}
+.welcome h1{
+	font-size: 45px;
+	margin-bottom: 40px;
+}
+.welcome i{
+	font-size: 35px;
+}
+.welcome h2{
+	font-size: 20px;
+}
+.welcome p{
+	font-size: 15px;
+}
+/*HEADER MENÚ*/
+.fa-bars, #X{
+	display: none;
+}
+.menu{
+	background-color: initial;
+	position: static;
+	padding-right: initial;
+	transition: none;
+}
+.menu li{
+	border-bottom: none;
+}
+.menu li a{
+	font-size: 15px;
+	padding: 15px;
+}
+.menu ul{
+	display: flex;
+	justify-content: space-around;
+}
+}
+
+
+
